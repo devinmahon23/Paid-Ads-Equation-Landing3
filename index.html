@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Paid Ads Equation™ — Mini‑Book</title>
+  <meta name="description" content="Engineer predictable ad profits with The Paid Ads Equation™. A diagnostic-first system by ScaleCentre™." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg:#0b0d12;        /* graphite/ink */
+      --card:#101319;      /* deep panel */
+      --muted:#99a1b3;     /* copy */
+      --accent:#d6b36a;    /* tan/gold */
+      --line:rgba(214,179,106,.25);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .serif{font-family:'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif}
+    .emboss{box-shadow: inset 0 1px 0 rgba(255,255,255,.03), inset 0 -6px 24px rgba(0,0,0,.45), 0 40px 80px rgba(0,0,0,.45)}
+    .gold{color:var(--accent)}
+    .btn{background:linear-gradient(135deg,var(--accent),#c9a55a); color:#0b0d12}
+    .btn:hover{filter:brightness(1.05)}
+    .ring-gold{box-shadow:0 0 0 1px var(--line), 0 10px 30px rgba(214,179,106,.22)}
+    .divider{background:linear-gradient(90deg,transparent,var(--line),transparent)}
+  </style>
+</head>
+<body class="bg-[var(--bg)] text-white">
+  <!-- Wrapper -->
+  <header class="border-b border-white/5 sticky top-0 z-40 backdrop-blur bg-[var(--bg)]/70">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-[var(--card)] ring-gold grid place-items-center"><span class="serif text-xl gold">Σ</span></div>
+        <span class="font-semibold tracking-tight">ScaleCentre™</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-[var(--muted)]">
+        <a href="#problem" class="hover:text-white">Why most ads fail</a>
+        <a href="#solution" class="hover:text-white">The Equation</a>
+        <a href="#case" class="hover:text-white">Uber case</a>
+        <a href="#chapters" class="hover:text-white">Inside the book</a>
+        <a href="#stack" class="hover:text-white">What you get</a>
+        <a href="#proof" class="hover:text-white">Proof</a>
+      </nav>
+      <a href="#checkout" class="ml-auto btn px-4 py-2 rounded-xl font-semibold">Get the mini‑book for $3</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20 pointer-events-none" aria-hidden="true">
+      <svg class="w-full h-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#d6b36a" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#d6b36a" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#g)"/>
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="uppercase tracking-widest text-xs text-[var(--muted)]">Mini‑book • Diagnostic‑first advertising</p>
+        <h1 class="serif text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mt-3">The Paid Ads Equation™</h1>
+        <p class="text-lg md:text-xl text-[var(--muted)] mt-5 max-w-xl">A systematic way to find, quantify, and fix performance leaks — before you spend another dollar. <span class="text-white">Used to engineer $3M+ in profitable campaigns.</span></p>
+        <div class="mt-8 flex items-center gap-4">
+          <a href="#checkout" class="btn rounded-2xl px-6 py-4 font-semibold text-base">Get instant access for $3</a>
+          <p class="text-sm text-[var(--muted)]">PDF • 45–60 min read</p>
+        </div>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="text-sm text-[var(--muted)]"><span class="block text-white font-semibold">Leak Calculator</span> Estimate annual loss at current CPA.</div>
+          <div class="text-sm text-[var(--muted)]"><span class="block text-white font-semibold">Diagnostic Trees</span> Know exactly what to fix next.</div>
+          <div class="text-sm text-[var(--muted)] md:col-span-1 col-span-2"><span class="block text-white font-semibold">Playbooks</span> Turn insights into controlled lifts.</div>
+        </div>
+      </div>
+
+      <!-- Premium book mockup (angled, embossed—describe placement) -->
+      <div class="relative md:justify-self-end">
+        <figure class="w-[90%] md:w-[420px] aspect-[3/4] mx-auto rotate-[-6deg] rounded-2xl bg-[var(--card)] emboss ring-gold p-6 flex flex-col">
+          <div class="flex-1 grid place-items-center">
+            <div class="text-center">
+              <span class="serif text-2xl">The Paid Ads Equation™</span>
+              <p class="mt-2 text-[var(--muted)]">High‑fidelity hardcover render, angled 6° left, subtle embossed title and spine foil in gold. (Replace this container with your premium book render.)</p>
+            </div>
+          </div>
+          <figcaption class="text-center text-xs text-[var(--muted)] mt-4">Mock placement: right column, rotated, soft shadow — communicates luxury & engineering.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Trust logos strip -->
+    <div class="border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 py-8 flex items-center gap-8 flex-wrap justify-center text-[var(--muted)]">
+        <span class="uppercase tracking-widest text-xs">Trusted by operators from</span>
+        <ul class="flex gap-6 opacity-80 text-sm">
+          <li>Shopify</li>
+          <li>HubSpot</li>
+          <li>Mailchimp</li>
+          <li>Adweek</li>
+          <li>Forbes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deeper Problem Agitation -->
+  <section id="problem" class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-20">
+      <div class="divider h-px mb-12"></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <h3 class="font-semibold text-white">Financial Cost</h3>
+          <p class="text-[var(--muted)] mt-2">At just $100/day, a 40% inefficiency is a <span class="text-white font-semibold">$14,600/year leak</span>. Most brands leak more — they just haven’t measured it.</p>
+        </div>
+        <div class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <h3 class="font-semibold text-white">Emotional Cost</h3>
+          <p class="text-[var(--muted)] mt-2">That low‑grade anxiety when results yo‑yo. The slack pings. The competitor screenshots. You’re not crazy — you’re flying without instruments.</p>
+        </div>
+        <div class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <h3 class="font-semibold text-white">Opportunity Cost</h3>
+          <p class="text-[var(--muted)] mt-2">Every misdiagnosis delays scale. The lift you needed this quarter gets kicked to the next. Compounding works both ways.</p>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <a href="#checkout" class="inline-flex items-center gap-2 btn px-6 py-3 rounded-2xl font-semibold">Fix the leak before you spend another dollar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution / Intro -->
+  <section id="solution" class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="serif text-3xl md:text-4xl font-extrabold">A diagnostic‑first operating system for ads</h2>
+        <p class="text-[var(--muted)] mt-4">The Paid Ads Equation™ flips the usual flow. Instead of adding budget and hoping, you trace outcomes back to causes, quantify friction at each stage, and intervene where lift is mathematically inevitable.</p>
+        <ul class="mt-6 space-y-3 text-[var(--muted)]">
+          <li><span class="text-white font-medium">Map:</span> Model your funnel as a control loop — inputs → transforms → outputs.</li>
+          <li><span class="text-white font-medium">Measure:</span> Pinpoint deltas with decision‑grade metrics (not vanity graphs).</li>
+          <li><span class="text-white font-medium">Modify:</span> Deploy targeted plays tied to specific failure modes.</li>
+        </ul>
+        <p class="mt-6 text-white">If this works for Uber, imagine what it can do for you…</p>
+      </div>
+      <aside class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+        <h3 class="font-semibold">Micro‑proofs</h3>
+        <div class="mt-4 grid sm:grid-cols-2 gap-4 text-sm text-[var(--muted)]">
+          <div class="p-4 rounded-xl bg-black/20">- Doubled lead‑to‑call rate by fixing a 3‑second LCP bottleneck.</div>
+          <div class="p-4 rounded-xl bg-black/20">- +32% ROAS after segmenting creative by intent stage.</div>
+          <div class="p-4 rounded-xl bg-black/20">- Cut CPA 27% via query negative lists & match‑type hygiene.</div>
+          <div class="p-4 rounded-xl bg-black/20">- +18% AOV by aligning offer copy to acquisition promise.</div>
+        </div>
+        <p class="text-xs text-[var(--muted)] mt-3">Representative results from applying the diagnostic flow in varied accounts.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Case Study: Uber -->
+  <section id="case" class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="serif text-3xl md:text-4xl font-extrabold">Case Study — Uber: Data‑Driven Marketing Optimization</h2>
+          <div class="mt-4 text-[var(--muted)] space-y-4">
+            <p><span class="text-white font-semibold">Problem:</span> Blanket campaigns lacked precision. Spend bled into unresponsive zones and segments; no clear read on where or why riders converted.</p>
+            <p><span class="text-white font-semibold">Diagnostic:</span> Built heatmaps to expose high‑demand geos and temporal patterns; layered behavioral cohorts to align incentives to real‑time demand.</p>
+            <p><span class="text-white font-semibold">Fix:</span> Deployed targeted promos and timing controls by zone & day‑part, shifting budget to responsive pockets.</p>
+            <p><span class="text-white font-semibold">Measured Result:</span> Targeted campaigns outperformed generics with a <span class="text-white font-semibold">+25% conversion rate</span>, materially improving efficiency. <span class="text-xs block mt-2 opacity-70">Source: marketingmaverick.io</span></p>
+          </div>
+          <!-- Micro‑testimonial after case study -->
+          <div class="mt-6 p-4 rounded-xl bg-[var(--card)]/60 ring-1 ring-white/5 text-smtext-[var(--muted)]">
+            <p class="text-sm text-[var(--muted)]">“This book finally gave our team a common language for diagnosis. The Uber example made it click.” — <span class="text-white">Growth Lead, Series B SaaS</span></p>
+          </div>
+        </div>
+        <!-- Before/After visual (text form) -->
+        <div class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <h3 class="font-semibold">Before → After</h3>
+          <div class="mt-4 grid grid-cols-2 gap-4 text-sm">
+            <div class="p-4 rounded-xl bg-black/20">
+              <p class="text-[var(--muted)]">Generic Targeting</p>
+              <ul class="mt-2 space-y-1">
+                <li>CVR: 3.2%</li>
+                <li>CPA: $24.10</li>
+                <li>Budget Waste: High</li>
+              </ul>
+            </div>
+            <div class="p-4 rounded-xl bg-black/20">
+              <p class="text-[var(--muted)]">Targeted by Demand Pockets</p>
+              <ul class="mt-2 space-y-1">
+                <li>CVR: <span class="text-white font-semibold">4.0%</span> (+25%)</li>
+                <li>CPA: <span class="text-white font-semibold">$19.20</span> (‑20%)</li>
+                <li>Budget Waste: Reduced</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-xs text-[var(--muted)] mt-3">Illustrative metrics for side‑by‑side clarity; your baselines will differ — the diagnostic process is the constant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Table (Peek Inside) -->
+  <section id="chapters" class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-20">
+      <h2 class="serif text-3xl md:text-4xl font-extrabold">Peek Inside: Table of Contents</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <ol class="space-y-6">
+          <li>
+            <h3 class="font-semibold">1) The Problem with Paid Ads <span class="text-xs text-[var(--muted)]">(icon: warning triangle)</span></h3>
+            <ul class="list-disc ml-6 text-[var(--muted)]">
+              <li>Why spend ≠ scale: variance, not volume, is the enemy.</li>
+              <li>How misaligned metrics create phantom wins.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">2) The Paid Ads Equation <span class="text-xs text-[var(--muted)]">(icon: sigma)</span></h3>
+            <ul class="list-disc ml-6 text-[var(--muted)]">
+              <li>The control‑loop model of acquisition.</li>
+              <li>Mapping inputs → transforms → outputs you can govern.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">3) Building the Engine <span class="text-xs text-[var(--muted)]">(icon: cog)</span></h3>
+            <ul class="list-disc ml-6 text-[var(--muted)]">
+              <li>Offer/Message/Market fit checks you can run weekly.</li>
+              <li>Creative & landing diagnostics that move the needle.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">4) Optimization: Math, not Emotion <span class="text-xs text-[var(--muted)]">(icon: calculator)</span></h3>
+            <ul class="list-disc ml-6 text-[var(--muted)]">
+              <li>Decision trees for “what to fix next.”</li>
+              <li>Designing controlled tests with meaningful deltas.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="font-semibold">5) Scaling with Precision <span class="text-xs text-[var(--muted)]">(icon: rocket)</span></h3>
+            <ul class="list-disc ml-6 text-[var(--muted)]">
+              <li>Guardrails for budget ramps that stick.</li>
+              <li>Diagnosing regression before it spreads.</li>
+            </ul>
+          </li>
+        </ol>
+        <aside class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <h3 class="font-semibold">What you’ll be able to do</h3>
+          <ul class="mt-4 space-y-3 text-[var(--muted)]">
+            <li>Build a one‑page diagnostic map your whole team can use.</li>
+            <li>Quantify the exact cost of friction at each stage.</li>
+            <li>Pick the next best move with conviction (and proof).</li>
+          </ul>
+          <!-- Micro‑testimonial after chapters -->
+          <div class="mt-6 p-4 rounded-xl bg-black/20 text-sm">
+            “The decision trees alone were worth it. We stopped random tweaks and found two real levers.” — <span class="text-white">DTC Founder</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stacked Value Perception -->
+  <section id="stack" class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-10 items-start">
+      <div class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+        <h2 class="serif text-3xl font-extrabold">What you get</h2>
+        <div class="mt-6 divide-y divide-white/5">
+          <div class="py-4 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-black/20 grid place-items-center">PDF</div>
+            <div class="flex-1">
+              <h4 class="font-semibold">The Paid Ads Equation™ PDF <span class="text-xs text-[var(--muted)]">(Value: $97)</span></h4>
+              <p class="text-[var(--muted)]">The complete system: models, diagnostics, and playbooks.</p>
+            </div>
+          </div>
+          <div class="py-4 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-black/20 grid place-items-center">VID</div>
+            <div class="flex-1">
+              <h4 class="font-semibold">Bonus Video Walkthrough <span class="text-xs text-[var(--muted)]">(Value: $47)</span></h4>
+              <p class="text-[var(--muted)]">A guided session — see the diagnostic trees applied to real data.</p>
+            </div>
+          </div>
+          <div class="py-4 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-black/20 grid place-items-center">MEMO</div>
+            <div class="flex-1">
+              <h4 class="font-semibold">Insider Marketing Memo — 1 Year <span class="text-xs text-[var(--muted)]">(Value: $120)</span></h4>
+              <p class="text-[var(--muted)]">A monthly memo on what we’re changing and why — tested insights, not hot takes.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Table/stack graphic described -->
+        <p class="text-[var(--muted)] text-sm mt-4">Visual: A vertical stack with subtle gold dividers and a “Total Value” bar at the bottom. (This block simulates the layout.)</p>
+        <div class="mt-5 p-4 rounded-xl bg-black/20 flex items-center justify-between">
+          <span class="text-white font-semibold">Total Value</span>
+          <span class="gold font-bold text-lg">$264</span>
+        </div>
+      </div>
+
+      <aside id="checkout" class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">Today only</h3>
+          <div class="text-sm text-[var(--muted)]">Intro price window <span id="countdown" class="ml-2 inline-block px-2 py-1 rounded-lg bg-black/20">—:—:—</span></div>
+        </div>
+        <p class="serif text-4xl font-extrabold mt-3">Get it now for <span class="gold">$3</span></p>
+        <p class="text-[var(--muted)] mt-2">Limited window or until allocation is reached.</p>
+        <a href="#" class="mt-6 w-full btn px-6 py-4 rounded-2xl font-semibold text-center block">Unlock the diagnostic system for $3</a>
+        <p class="text-xs text-[var(--muted)] mt-3">Secure checkout • Instant download</p>
+        <!-- Micro‑testimonial after offer stack -->
+        <div class="mt-6 p-4 rounded-xl bg-black/20 text-sm">
+          “$3 to stop guessing was a no‑brainer. We found a 22% lift in a week.” — <span class="text-white">Agency Owner</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section id="guarantee" class="relative">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <h2 class="serif text-3xl md:text-4xl font-extrabold">Guarantee: Skeptics Welcome</h2>
+      <p class="text-[var(--muted)] mt-4 max-w-3xl mx-auto">If you’ve been burned before — good. This is built for people who want proof, not pep talks. If the book doesn’t help you identify at least one measurable bottleneck to fix in 7 days, email us and we’ll make it right.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials / Proof (full) -->
+  <section id="proof" class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-20">
+      <h2 class="serif text-3xl md:text-4xl font-extrabold">What operators are saying</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <blockquote class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <p class="text-sm text-[var(--muted)]">“Our ROAS stabilized for the first time in months. The decision tree ended internal debates.”</p>
+          <footer class="mt-3 text-xs text-white/80">CMO, Ecommerce</footer>
+        </blockquote>
+        <blockquote class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <p class="text-sm text-[var(--muted)]">“The math reframed our whole process. We cut 28% waste before raising budget.”</p>
+          <footer class="mt-3 text-xs text-white/80">Head of Growth, Fintech</footer>
+        </blockquote>
+        <blockquote class="bg-[var(--card)]/60 rounded-2xl p-6 ring-1 ring-white/5">
+          <p class="text-sm text-[var(--muted)]">“It reads like a lab manual from someone who’s actually shipped results.”</p>
+          <footer class="mt-3 text-xs text-white/80">Founder, B2B SaaS</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Push (Second Hero) -->
+  <section id="closing" class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="serif text-3xl md:text-4xl font-extrabold">Stop fueling a leaky system.</h2>
+        <ul class="mt-5 space-y-2 text-[var(--muted)]">
+          <li><span class="text-white font-medium">Diagnostic‑first:</span> Fix the right thing at the right depth.</li>
+          <li><span class="text-white font-medium">Math‑anchored:</span> Decisions tied to meaningful deltas, not vibes.</li>
+          <li><span class="text-white font-medium">Operator‑tested:</span> Built from accounts that actually scaled.</li>
+        </ul>
+        <a href="#checkout" class="mt-8 inline-flex items-center gap-2 btn px-6 py-4 rounded-2xl font-semibold">Start engineering profit for $3</a>
+      </div>
+      <div class="md:justify-self-end">
+        <figure class="w-[90%] md:w-[420px] aspect-[3/4] mx-auto rotate-3 rounded-2xl bg-[var(--card)] emboss ring-gold p-6 flex flex-col">
+          <div class="flex-1 grid place-items-center text-center">
+            <span class="serif text-2xl">Premium Book Render</span>
+            <p class="mt-2 text-[var(--muted)]">Alternate angle: rotated right with spine visible. (Replace with your render.)</p>
+          </div>
+        </figure>
+      </div>
+    </div>
+    <div class="border-t border-white/5 py-8 text-center text-xs text-[var(--muted)]">© <span id="year"></span> ScaleCentre™. All rights reserved.</div>
+  </section>
+
+  <script>
+    // Simple 72-hour countdown from first load
+    (function(){
+      const KEY = 'pae_countdown_start';
+      const now = Date.now();
+      let start = localStorage.getItem(KEY);
+      if(!start){
+        start = now;
+        localStorage.setItem(KEY, String(start));
+      } else {
+        start = parseInt(start,10);
+      }
+      const deadline = start + 72*60*60*1000; // 72 hours
+      const el = document.getElementById('countdown');
+      function tick(){
+        const t = Math.max(0, deadline - Date.now());
+        const h = Math.floor(t/ (1000*60*60));
+        const m = Math.floor((t % (1000*60*60)) / (1000*60));
+        const s = Math.floor((t % (1000*60)) / 1000);
+        if(el) el.textContent = String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+        if(t<=0) clearInterval(timer);
+      }
+      const timer = setInterval(tick,1000); tick();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
